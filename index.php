@@ -4,7 +4,7 @@
     <title>JPaaS Demo - US Election Vote</title>
 </head>
 <body>
-    <h1>Vote for the US Election 2024</h1>
+    <h1>Vote for the US Election in 2024</h1>
     <form action="process_vote.php" method="post">
         <label for="voter_name">Your Name:</label>
         <input type="text" name="voter_name" required><br>
