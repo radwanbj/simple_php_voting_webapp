@@ -58,6 +58,10 @@
 </head>
 <body>
     <h1>Burger vs Pizza</h1>
+    <div>
+        <img src="burger.jpg" alt="Burger" width="200">
+        <img src="pizza.jpg" alt="Pizza" width="200">
+    </div>
     <form action="process_vote.php" method="post">
         <label for="voter_name">Your Name:</label>
         <input type="text" name="voter_name" required><br>
