@@ -24,7 +24,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $sql = "INSERT INTO votes (voter_name, candidate) VALUES (?, ?)";
         $stmt = $pdo->prepare($sql);
         $stmt->execute([$voter_name, $candidate]);
-        echo "Vote recorded successfully!";
+        // echo "Vote recorded successfully!";
     } catch (PDOException $e) {
         echo "Error: " . $e->getMessage();
     }
