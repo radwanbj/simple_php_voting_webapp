@@ -103,53 +103,7 @@
     <div class="results">
         <h2>Results</h2>
         <?php
-           <div class="results">
-    <h2>Results</h2>
-    <table>
-        <tr>
-            <th>Candidate</th>
-            <th>Votes</th>
-            <th>Percentage</th>
-        </tr>
-        <?php
-            // Database configuration
-$db_host = 'node6478-taqnya-expo-demo.fin.libyanspider.cloud';
-$db_user = 'root';
-$db_password = 'VEGqcb43669';
-$db_name = 'election';
-
-
-// Connect to the database
-try {
-    $pdo = new PDO("mysql:host=$db_host;dbname=$db_name", $db_user, $db_password);
-    // Set PDO to throw exceptions on error
-    $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-} catch (PDOException $e) {
-    die("Connection failed: " . $e->getMessage());
-}
-            // Query to count votes for each candidate
-            $sql = "SELECT candidate, COUNT(*) AS vote_count FROM votes GROUP BY candidate";
-            $stmt = $pdo->query($sql);
-            $totalVotes = 0;
-
-            while ($row = $stmt->fetch()) {
-                $candidate = $row['candidate'];
-                $voteCount = $row['vote_count'];
-                $totalVotes += $voteCount;
-
-                // Calculate the percentage
-                $percentage = ($voteCount / $totalVotes) * 100;
-
-                echo "<tr>";
-                echo "<td>$candidate</td>";
-                echo "<td>$voteCount</td>";
-                echo "<td>$percentage%</td>";
-                echo "</tr>";
-            }
-        ?>
-    </table>
-</div>
-
+            // Include your PHP code to display the results here
         ?>
     </div>
 </body>
