@@ -74,5 +74,8 @@
 
         <input type="submit" value="Vote">
     </form>
+    <div class="results">
+        <!-- PHP code in "process_vote.php" will display the results here -->
+    </div>
 </body>
 </html>
