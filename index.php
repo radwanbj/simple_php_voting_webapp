@@ -100,11 +100,5 @@
 
         <input type="submit" value="Vote">
     </form>
-    <div class="results">
-        <h2>Results</h2>
-        <?php
-            // Include your PHP code to display the results here
-        ?>
-    </div>
 </body>
 </html>
