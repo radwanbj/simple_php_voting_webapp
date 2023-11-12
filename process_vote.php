@@ -16,19 +16,19 @@ try {
 }
 
 
-if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-    $voter_name = $_POST['voter_name'];
-    $candidate = $_POST['candidate'];
+// if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+//     $voter_name = $_POST['voter_name'];
+//     $candidate = $_POST['candidate'];
 
-    try {
-        $sql = "INSERT INTO votes (voter_name, candidate) VALUES (?, ?)";
-        $stmt = $pdo->prepare($sql);
-        $stmt->execute([$voter_name, $candidate]);
-        // echo "Vote recorded successfully!";
-    } catch (PDOException $e) {
-        echo "Error: " . $e->getMessage();
-    }
-}
+//     try {
+//         $sql = "INSERT INTO votes (voter_name, candidate) VALUES (?, ?)";
+//         $stmt = $pdo->prepare($sql);
+//         $stmt->execute([$voter_name, $candidate]);
+//         // echo "Vote recorded successfully!";
+//     } catch (PDOException $e) {
+//         echo "Error: " . $e->getMessage();
+//     }
+// }
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $voter_name = $_POST['voter_name'];
