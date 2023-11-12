@@ -1,8 +1,8 @@
 <?php
 // Database configuration
-$db_host = 'node6482-expo-demo.fin.libyanspider.cloud';
+$db_host = 'node6478-taqnya-expo-demo.fin.libyanspider.cloud';
 $db_user = 'root';
-$db_password = 'FGSxgo42839';
+$db_password = 'VEGqcb43669';
 $db_name = 'election';
 
 
