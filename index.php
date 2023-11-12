@@ -54,6 +54,32 @@
                 max-width: 90%;
             }
         }
+
+        .results {
+            background-color: #fff;
+            border-radius: 10px;
+            padding: 20px;
+            max-width: 300px;
+            margin: 0 auto;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+
+        th, td {
+            padding: 8px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
     </style>
 </head>
 <body>
@@ -63,19 +89,13 @@
         <img src="pizza.jpg" alt="Pizza" width="200">
     </div>
     <form action="process_vote.php" method="post">
-        <label for="voter_name">Your Name:</label>
-        <input type="text" name="voter_name" required><br>
-
-        <label for="candidate">Choose an Option:</label>
-        <select name="candidate">
-            <option value="Burger">Burger</option>
-            <option value="Pizza">Pizza</option>
-        </select><br>
-
-        <input type="submit" value="Vote">
+        <!-- Your voting form -->
     </form>
     <div class="results">
-        <!-- PHP code in "process_vote.php" will display the results here -->
+        <h2>Results</h2>
+        <?php
+            // Include your PHP code to display the results here
+        ?>
     </div>
 </body>
 </html>
